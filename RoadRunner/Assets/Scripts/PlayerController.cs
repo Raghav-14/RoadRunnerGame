@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour
         moveVector.y = verticleVelocity;
         //for forward and backward
         moveVector.z = charSpeed;
-       // moveVector = new Vector3((Mathf.Clamp(moveVector.x,-3, 3)), moveVector.y, moveVector.z);
+
         charController.Move(moveVector * Time.deltaTime );
     }
 }
