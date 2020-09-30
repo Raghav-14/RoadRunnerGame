@@ -1502,6 +1502,7 @@ GameObject:
   - component: {fileID: 4787506366311801941}
   - component: {fileID: 4787506366311801938}
   - component: {fileID: 4787506366311801940}
+  - component: {fileID: 4787506366399148536}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1518,7 +1519,7 @@ Transform:
   m_GameObject: {fileID: 5670536044725049607}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.025, y: 0.025, z: 0.025}
+  m_LocalScale: {x: 0.015, y: 0.015, z: 0.015}
   m_Children:
   - {fileID: 5262925321987257995}
   - {fileID: 2612515637518568687}
@@ -1537,12 +1538,12 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 2
   m_Height: 2
-  m_Radius: 0.5
+  m_Radius: 30
   m_SlopeLimit: 45
   m_StepOffset: 0.01
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 50, z: 0}
 --- !u!95 &4787506366311801938
 Animator:
   serializedVersion: 3
@@ -1574,7 +1575,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dca00418479efdc40903ebab79aafd63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  charSpeed: 30
+  charSpeed: 6
+  anim: {fileID: 4787506366311801938}
+  coinText: {fileID: 0}
+--- !u!114 &4787506366399148536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5670536044725049607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c03274aec0569d4980a94730152b622, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 0}
 --- !u!1 &5733905882573315586
 GameObject:
   m_ObjectHideFlags: 0

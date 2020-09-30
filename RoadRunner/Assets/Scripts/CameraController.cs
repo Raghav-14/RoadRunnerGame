@@ -10,8 +10,8 @@ public class CameraController : MonoBehaviour
 
     //variables for starting transitions
     private float transition = 0.0f;
-    private float cameraTransitionDuration = 3.0f;
-    private Vector3 cameraOffset = new Vector3 (0, 5, 5); 
+    private float cameraTransitionDuration = 1.0f;
+    private Vector3 cameraOffset = new Vector3 (0, 5, 14); 
 
     // Start is called before the first frame update
     void Start()
